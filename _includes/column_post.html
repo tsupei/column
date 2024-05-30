@@ -1,0 +1,36 @@
+<div class="column-post">
+	<!-- title -->
+	<div class="column-meta">
+		<div class="column-title text-left" >
+			{{ post.title }}
+		</div>
+		
+		<!-- date -->
+		<div class="column-date text-left">
+			{{ post.date | date: "%-d %B %Y"  }}
+		</div>
+	</div>
+
+	<!-- category: clickable -->
+	<div class="column-tags text-left">
+	{% for category in post.categories %}
+		<i href="#" class="badge badge-dark">
+			<a href="{{site.baseurl}}/posts/{{category}}/">{{ category }}</a>
+		</i>
+	{% endfor %}
+	{% for tag in post.tags %}
+		<i href="#" class="badge badge-success">
+			{{tag}}
+		</i>
+	{% endfor %}
+	</div>
+	<hr>
+
+	<!-- content -->
+	<div class="column-content text-left">
+		<p>
+			{{ post.content }}
+		</p>
+	</div>		
+	<hr>
+</div>
