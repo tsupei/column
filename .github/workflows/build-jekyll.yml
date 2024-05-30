@@ -20,6 +20,20 @@ jobs:
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
+      
+      # Install Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      # Install npm dependencies
+      - name: Install npm dependencies
+        run: npm install
+
+      # Build SCSS
+      - name: Build SCSS
+        run: npm run build:scss
 
       # Use GitHub Deploy Action to build and deploy to Github
       - uses: jeffreytse/jekyll-deploy-action@v0.4.0
