@@ -1,0 +1,11 @@
+{
+    "name": "your-project-name",
+    "version": "1.0.0",
+    "description": "Description of your project",
+    "scripts": {
+      "build:scss": "sass assets/css/style.scss assets/css/style.css"
+    },
+    "devDependencies": {
+      "sass": "^1.43.4"
+    }
+  }
