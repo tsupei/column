@@ -1,9 +1,9 @@
 ---
 layout: default
-title:  "Vision Transformer Need Registers."
-description: ""
+title:  "Vision Transformer Need Registers"
+description: "Zero-shot segmention."
 categories: paper
-tags: ICLR2024 transformer vision-encoder CLIP
+tags: ICLR2024 transformer vision-encoder CLIP 2024
 excerpt_separator: <!--more-->
 ---
 

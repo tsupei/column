@@ -1,7 +1,7 @@
 ---
 layout: default
-title:  "Temperature."
-description: ""
+title:  "Temperature in LLMs"
+description: "What does temperature mean in LLMs."
 categories: decoding
 tags: transformer autoregressive-model decoding
 excerpt_separator: <!--more-->
