@@ -6,6 +6,12 @@ layout: default
 		<div class="col-md-4 col-sm-0">
 		</div>
 		<div class="view-home col-md-4 col-sm-12 post-home-color">
+			{% for category in site.categories %}
+				{% assign cat = category | first | strip_html %}
+				<i href="#" class="badge badge-dark">
+				<a href="{{site.baseurl}}/posts/{{cat}}/">{{ cat }}</a>
+				</i>
+				{% endfor %}
 			{{ content }}
 		</div>
 		<div class="col-md-4 col-sm-0">
