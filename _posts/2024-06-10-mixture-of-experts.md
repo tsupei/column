@@ -18,7 +18,7 @@ Summary
 1. `MoE Layers`: MoE Layers are used in transformers in replace of feedforward layers. An MoE layer is composed of a few experts, which can be either FFN or another MoE layers.
 2. `Gate network`: Each token is routed to $k$ experts based on the gate network, for example, a softmax function.
 3. `Expert capacity`: In practice, different experts may have unbalanced workload. Each expert is set capacity to avoid overfitting and unbalanced workloads.
-4. `Auxiliary Loss`: An loss to avoid unbalanced workloads, for example,  $KL(G(x) || U)$ the KL-divergence from the gate network to an uniform distribution.
+4. `Auxiliary Loss`: An loss to avoid unbalanced workloads, for example,  $ \textit{KL}(G(x) \|\| U) $ the KL-divergence from the gate network to an uniform distribution.
 
 ---
 
