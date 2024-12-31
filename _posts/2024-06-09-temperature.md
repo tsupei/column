@@ -2,7 +2,7 @@
 layout: default
 title:  "Temperature in LLMs"
 description: "What does temperature mean in LLMs."
-categories: decoding
+categories: decoding basic
 tags: transformer autoregressive-model decoding
 excerpt_separator: <!--more-->
 ---
