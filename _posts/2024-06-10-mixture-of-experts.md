@@ -2,7 +2,7 @@
 layout: default
 title:  "MoE (Mixture of Experts)"
 description: "Mixture of Experts"
-categories: llm
+categories: transformer
 tags: google transformer moe switch-transformer
 excerpt_separator: <!--more-->
 ---
